@@ -2,55 +2,37 @@ import './App.css'
 
 export default function App() {
   return (
-    <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
-      <img src="/img/beams.jpg" alt="" className="absolute left-1/2 top-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" width="1308" />
-      <div className="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="relative bg-white px-6 pb-8 pt-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
-        <div className="mx-auto max-w-md">
-          <img src="/img/logo.svg" className="h-6" alt="Tailwind Play" />
-          <div className="divide-y divide-gray-300/50">
-            <div className="space-y-6 py-8 text-base leading-7 text-gray-600">
-              <p>An advanced online playground for Tailwind CSS, including support for things like:</p>
-              <ul className="space-y-4">
-                <li className="flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="11" />
-                    <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-                  </svg>
-                  <p className="ml-4">
-                    Customizing your
-                    <code className="text-sm font-bold text-gray-900">tailwind.config.js</code> file
-                  </p>
-                </li>
-                <li className="flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="11" />
-                    <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-                  </svg>
-                  <p className="ml-4">
-                    Extracting classes with
-                    <code className="text-sm font-bold text-gray-900">@apply</code>
-                  </p>
-                </li>
-                <li className="flex items-center">
-                  <svg className="h-6 w-6 flex-none fill-sky-100 stroke-sky-500 stroke-2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="11" />
-                    <path d="m8 13 2.165 2.165a1 1 0 0 0 1.521-.126L16 9" fill="none" />
-                  </svg>
-                  <p className="ml-4">Code completion with instant preview</p>
-                </li>
-              </ul>
-              <p>Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.</p>
-            </div>
-            <div className="pt-8 text-base font-semibold leading-7">
-              <p className="text-gray-900">Want to dig deeper into Tailwind?</p>
-              <p>
-                <a href="https://tailwindcss.com/docs" className="text-sky-500 hover:text-sky-600">Read the docs &rarr;</a>
-              </p>
-            </div>
+    <>
+    <header className="bg-white">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div className="flex lg:flex-1">
+          <a href="#" className="-m-1.5 p-1.5">
+            <span className="sr-only">Your Company</span>
+            <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+          </a>
+        </div>
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            Share <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+      <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div className="text-center">
+          <p className="text-base font-semibold text-indigo-600">A77 labs</p>
+          <h1 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Stimulate your mind</h1>
+          <p className="mt-3 text-base leading-7 text-gray-600">Interesting articles on click.</p>
+          <div className="mt-6 flex items-center justify-center gap-x-6">
+            <a
+              href="#"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Show me <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
+      </main>
+    </>
   )
 }
